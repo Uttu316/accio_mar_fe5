@@ -1,0 +1,9 @@
+.footer_container {
+  padding: 16px;
+  background-color: darkslategray;
+  color: wheat;
+}
+.footer_container p {
+  text-align: center;
+  font-size: 16px;
+}

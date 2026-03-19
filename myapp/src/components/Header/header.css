@@ -1,0 +1,39 @@
+.app_header_container {
+  box-shadow: 4px 4px 4px #ccc;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app_header_logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.app_header_logo img {
+  height: 40px;
+}
+
+.app_header_logo h2 {
+  font-size: 30px;
+  font-style: italic;
+  color: darkorange;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.app_navbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.app_navbar a {
+  padding: 12px;
+  font-size: 22px;
+  color: darkolivegreen;
+  text-decoration: none;
+}
+.app_navbar a:hover {
+  color: darkorange;
+}

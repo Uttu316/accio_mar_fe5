@@ -1,0 +1,11 @@
+.heading {
+  font-size: 32px;
+  color: brown;
+  text-align: center;
+}
+.container {
+  border: 2px solid blueviolet;
+  padding: 40px;
+  margin: 40px auto;
+  width: 50%;
+}
