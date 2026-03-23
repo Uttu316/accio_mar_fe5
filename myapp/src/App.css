@@ -9,3 +9,9 @@
   margin: 40px auto;
   width: 50%;
 }
+
+.resume_intro_section {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 0px 0px 20px 0px;
+}

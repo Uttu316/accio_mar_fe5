@@ -1,0 +1,21 @@
+.list_container {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.list_heading {
+  font-size: 24px;
+  color: darkblue;
+  margin-bottom: 10px;
+}
+
+.list_box {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+.list_item {
+  margin-bottom: 5px;
+  color: #333;
+}
