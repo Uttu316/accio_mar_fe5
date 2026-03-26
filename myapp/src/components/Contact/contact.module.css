@@ -1,0 +1,19 @@
+.section {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+  background: #0f172a;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  color: #e2e8f0;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 2rem;
+  color: #f1f5f9;
+  letter-spacing: -0.02em;
+  border-left: 4px solid #6366f1;
+  padding-left: 0.75rem;
+}

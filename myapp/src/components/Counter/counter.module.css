@@ -1,0 +1,90 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.5rem 3rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  border-radius: 1.5rem;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  max-width: 320px;
+  margin: 2rem auto;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #a0aec0;
+  margin: 0;
+}
+
+.display {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  line-height: 1;
+  min-width: 120px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 30px rgba(99, 179, 237, 0.4);
+  transition: color 0.2s ease;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.btnAdd {
+  background: linear-gradient(135deg, #48bb78, #38a169);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(72, 187, 120, 0.35);
+}
+
+.btnAdd:hover {
+  background: linear-gradient(135deg, #68d391, #48bb78);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(72, 187, 120, 0.5);
+}
+
+.btnAdd:active {
+  transform: translateY(0);
+}
+
+.btnMinus {
+  background: linear-gradient(135deg, #fc8181, #e53e3e);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(229, 62, 62, 0.35);
+}
+
+.btnMinus:hover {
+  background: linear-gradient(135deg, #feb2b2, #fc8181);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 62, 62, 0.5);
+}
+
+.btnMinus:active {
+  transform: translateY(0);
+}

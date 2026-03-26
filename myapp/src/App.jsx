@@ -1,4 +1,6 @@
 import "./App.css";
+import Contact from "./components/Contact";
+import Counter from "./components/Counter";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ResumeList from "./components/ResumeList";
@@ -18,6 +20,8 @@ function App() {
       <ResumeList title="Skills" list={SKILLS} />
       <ResumeList title="Experience" list={EXPERIENCE} />
       <ResumeList title="Education" list={EDUCATION} />
+      <Counter />
+      <Contact />
       <Footer />
     </div>
   );
