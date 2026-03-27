@@ -4,6 +4,7 @@ import Counter from "./components/Counter";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ResumeList from "./components/ResumeList";
+import SaleBanner from "./components/SaleBanner";
 import { EDUCATION, EXPERIENCE, SKILLS } from "./data/resume";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <ResumeList title="Education" list={EDUCATION} />
       <Counter />
       <Contact />
+      <SaleBanner />
       <Footer />
     </div>
   );

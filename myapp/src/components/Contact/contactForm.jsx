@@ -1,12 +1,7 @@
 import { useState } from "react";
 import styles from "./contactForm.module.css";
 
-const ContactForm = ({ onCreate }) => {
-  const [data, setData] = useState({
-    username: "",
-    message: "",
-    email: "",
-  });
+const ContactForm = ({ onCreate, onUpdate, editIndex, data, setData }) => {
   const [error, setError] = useState("");
 
   const onInput = (e) => {
@@ -23,7 +18,12 @@ const ContactForm = ({ onCreate }) => {
       data.email.includes("@") &&
       data.message.length > 8
     ) {
-      onCreate(data);
+      if (editIndex !== null) {
+        onUpdate(data);
+      } else {
+        onCreate(data);
+      }
+
       setData({ username: "", email: "", message: "" }); //reset the data of form
     } else {
       setError("Please fill values"); // show error message

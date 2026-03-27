@@ -48,3 +48,12 @@
   grid-column: 1 / -1;
   line-height: 1.5;
 }
+
+.editing {
+  border-color: salmon;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.15);
+}
+.editing:hover {
+  border-color: salmon;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.15);
+}
