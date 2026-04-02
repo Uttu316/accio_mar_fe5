@@ -1,0 +1,236 @@
+.banner {
+  position: relative;
+  height: 320px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bannerOverlay {
+  position: absolute;
+  inset: 0;
+  background: url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=60")
+    center/cover no-repeat;
+  opacity: 0.2;
+}
+
+.bannerContent {
+  position: relative;
+  z-index: 1;
+}
+
+.bannerTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 0.5rem;
+}
+
+.bannerSub {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* Story */
+.story {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 5%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.storyImage {
+  flex: 1;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.storyImage img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+  max-height: 380px;
+}
+
+.storyContent {
+  flex: 1;
+}
+
+.storyLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6366f1;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.5rem;
+}
+
+.storyTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1rem;
+}
+
+.storyText {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+/* Stats */
+.stats {
+  padding: 3rem 5%;
+  background: #f8fafc;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.statItem {
+  padding: 1.5rem;
+}
+
+.statNumber {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #6366f1;
+  margin: 0;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0.25rem 0 0;
+}
+
+/* Values */
+.values {
+  padding: 4rem 5%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.valuesTitle {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 2.5rem;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.valueCard {
+  padding: 2rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.valueCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.valueIcon {
+  font-size: 2rem;
+  color: #6366f1;
+  margin-bottom: 0.75rem;
+}
+
+.valueTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 0.5rem;
+}
+
+.valueDesc {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Team */
+.team {
+  padding: 4rem 5%;
+  background: #f8fafc;
+}
+
+.teamTitle {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 2.5rem;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.teamCard {
+  text-align: center;
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.teamAvatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #eef2ff;
+}
+
+.teamName {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 0.25rem;
+}
+
+.teamRole {
+  font-size: 0.85rem;
+  color: #6366f1;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .story {
+    flex-direction: column;
+  }
+  .bannerTitle {
+    font-size: 1.75rem;
+  }
+}

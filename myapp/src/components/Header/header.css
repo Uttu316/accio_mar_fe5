@@ -37,3 +37,6 @@
 .app_navbar a:hover {
   color: darkorange;
 }
+.app_navbar a.active {
+  color: darkorange;
+}

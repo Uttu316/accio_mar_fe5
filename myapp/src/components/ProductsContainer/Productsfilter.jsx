@@ -9,27 +9,16 @@ const ProductsFilter = ({ filter, setfilter }) => {
         setFilter={setfilter}
         filter={filter}
       />
+
       <FilterItem
-        value={"men's clothing"}
-        label={"Men's clothing"}
+        value={"smartphones"}
+        label={"Smart Phones"}
         setFilter={setfilter}
         filter={filter}
       />
       <FilterItem
-        value={"women's clothing"}
-        label={"Women's clothing"}
-        setFilter={setfilter}
-        filter={filter}
-      />
-      <FilterItem
-        value={"electronics"}
-        label={"Electronics"}
-        setFilter={setfilter}
-        filter={filter}
-      />
-      <FilterItem
-        value={"jewelery"}
-        label={"Jewelery"}
+        value={"laptops"}
+        label={"Laptops"}
         setFilter={setfilter}
         filter={filter}
       />

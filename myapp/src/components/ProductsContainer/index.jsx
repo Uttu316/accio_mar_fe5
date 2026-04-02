@@ -2,20 +2,25 @@ import { useCallback, useEffect, useState } from "react";
 import ProductsFilter from "./Productsfilter";
 import ProductsList from "./Productslist";
 import styles from "./productsContainer.module.css";
+import { API } from "../../services";
 
 const ProductsContainer = () => {
   const [products, setProducts] = useState([]);
   const [status, setStatus] = useState("loading");
+  const [error, setError] = useState("");
   const [filter, setfilter] = useState("all");
 
   const getProducts = useCallback(async () => {
     try {
-      const res = await fetch("https://fakestoreapi.com/products");
-      const data = await res.json();
-      setProducts(data);
+      const res = await API({
+        endpoint: "/randomproducts",
+      });
+
+      setProducts(res.data.data);
       setStatus("done");
     } catch (e) {
       setStatus("error");
+      setError(e.message);
     }
   }, []);
   useEffect(() => {
@@ -31,11 +36,14 @@ const ProductsContainer = () => {
 
   //heavy operation on every rerender
 
+  console.log({ products });
   return (
     <div className={styles.container}>
       <h2 className={styles.heading}>Latest Products</h2>
       {isLoading && <h3 className={styles.loading}>Loading products...</h3>}
-      {isError && <h3 className={styles.error}>Something went wrong</h3>}
+      {isError && (
+        <h3 className={styles.error}>{error || "Something went wrong"}</h3>
+      )}
       {noProducts && <h3 className={styles.empty}>Products not available</h3>}
       {hasProducts && (
         <div className={styles.content}>
