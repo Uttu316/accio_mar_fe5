@@ -2,14 +2,14 @@ import Contact from "../../components/Contact";
 import Counter from "../../components/Counter";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import PageWrapper from "../../components/PageWrapper";
 import ResumeList from "../../components/ResumeList";
 import SaleBanner from "../../components/SaleBanner";
 import { EDUCATION, EXPERIENCE, SKILLS } from "../../data/resume";
 
 const ResumePage = () => {
   return (
-    <div>
-      <Header title={"Resume"} />
+    <PageWrapper title={"Resume"}>
       <section className="resume_intro_section">
         <h1>Utkarsh Gupta</h1>
         <p>
@@ -23,8 +23,7 @@ const ResumePage = () => {
       <Counter />
       <Contact />
       <SaleBanner />
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

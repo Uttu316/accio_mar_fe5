@@ -2,12 +2,11 @@ import { FiMail, FiPhone, FiMapPin, FiClock, FiSend } from "react-icons/fi";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import styles from "./contact.module.css";
+import PageWrapper from "../../components/PageWrapper";
 
 const ContactPage = () => {
   return (
-    <div>
-      <Header title="Contact Us" />
-
+    <PageWrapper title="Contact Us">
       {/* Banner */}
       <section className={styles.banner}>
         <h1 className={styles.bannerTitle}>Get in Touch</h1>
@@ -183,9 +182,7 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

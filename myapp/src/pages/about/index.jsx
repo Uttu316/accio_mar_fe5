@@ -2,12 +2,11 @@ import { FiHeart, FiGlobe, FiZap, FiAward } from "react-icons/fi";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import styles from "./about.module.css";
+import PageWrapper from "../../components/PageWrapper";
 
 const AboutPage = () => {
   return (
-    <div>
-      <Header title="About Us" />
-
+    <PageWrapper title="About Us">
       {/* Banner */}
       <section className={styles.banner}>
         <div className={styles.bannerOverlay} />
@@ -145,9 +144,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

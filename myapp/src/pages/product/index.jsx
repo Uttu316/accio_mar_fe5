@@ -17,6 +17,7 @@ import {
   FiChevronRight,
 } from "react-icons/fi";
 import styles from "./product.module.css";
+import PageWrapper from "../../components/PageWrapper";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -47,9 +48,7 @@ const ProductPage = () => {
   const hasProduct = status === "done" && product !== null;
 
   return (
-    <div className={styles.page}>
-      <Header title="ShopVibe" />
-
+    <PageWrapper title="ShopVibe" className={styles.page}>
       <main className={styles.main}>
         {isLoading && (
           <div className={styles.loading}>
@@ -269,9 +268,7 @@ const ProductPage = () => {
           </>
         )}
       </main>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

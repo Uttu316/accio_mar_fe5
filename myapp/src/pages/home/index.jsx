@@ -1,14 +1,11 @@
 import { Link } from "react-router";
 import { FiTruck, FiShield, FiCreditCard, FiHeadphones } from "react-icons/fi";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import styles from "./home.module.css";
+import PageWrapper from "../../components/PageWrapper";
 
 const HomePage = () => {
   return (
-    <div>
-      <Header title="ShopVibe" />
-
+    <PageWrapper title="ShopVibe">
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
@@ -128,9 +125,7 @@ const HomePage = () => {
           <button className={styles.newsletterBtn}>Subscribe</button>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

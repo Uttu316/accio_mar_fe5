@@ -7,15 +7,12 @@ import {
   FiCompass,
   FiPackage,
 } from "react-icons/fi";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import styles from "./notfound.module.css";
+import PageWrapper from "../../components/PageWrapper";
 
 const NotFoundPage = () => {
   return (
-    <div className={styles.page}>
-      <Header title="ShopVibe" />
-
+    <PageWrapper title="ShopVibe" className={styles.page}>
       <main className={styles.container}>
         {/* Illustrated 404 */}
         <div className={styles.illustration}>
@@ -47,9 +44,7 @@ const NotFoundPage = () => {
           alt="Lost illustration"
         />
       </main>
-
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

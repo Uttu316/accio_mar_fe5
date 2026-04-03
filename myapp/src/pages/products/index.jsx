@@ -1,14 +1,11 @@
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import PageWrapper from "../../components/PageWrapper";
 import ProductsContainer from "../../components/ProductsContainer";
 
 const ProductsPage = () => {
   return (
-    <div>
-      <Header title={"Products"} />
+    <PageWrapper title={"Products"}>
       <ProductsContainer />
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 export default ProductsPage;
